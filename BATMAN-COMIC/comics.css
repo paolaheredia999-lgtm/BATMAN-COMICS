@@ -1,0 +1,131 @@
+/* ===== FUENTES ===== */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Orbitron:wght@400;700&display=swap');
+
+/* ===== BODY / FONDO ===== */
+body {
+    margin: 0;
+    background: url("gotica.webp") no-repeat center center fixed;
+    background-size: cover;
+    color: #e5e5e5;
+    font-family: 'Orbitron', sans-serif;
+}
+
+/* OVERLAY OSCURO */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.6);
+    z-index: -1;
+}
+
+/* ===== MENU ===== */
+nav{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    padding:15px;
+    background: rgba(0,0,0,0.85);
+    backdrop-filter: blur(6px);
+    box-shadow: 0 0 20px rgba(0,0,0,0.8);
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    letter-spacing:3px;
+    position:relative;
+    transition:0.3s;
+}
+
+/* ANIMACIÓN LÍNEA */
+nav a::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-6px;
+    width:0%;
+    height:2px;
+    background: crimson;
+    transition:0.3s;
+}
+
+nav a:hover::after{
+    width:100%;
+}
+
+nav a:hover{
+    color:rgb(180,180,180);
+    text-shadow:0 0 10px rgb(180,180,180);
+}
+
+/* ===== HEADER ===== */
+header{
+    text-align:center;
+    padding:100px 20px;
+}
+
+header h1{
+    font-family:'Cinzel', serif;
+    font-size:3rem;
+    letter-spacing:5px;
+    text-shadow:0 0 20px rgba(255,255,255,0.3);
+}
+
+/* ===== CONTENEDOR COMICS ===== */
+.pdf-container{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    margin-top:40px;
+}
+
+/* ===== TARJETAS ===== */
+.pdf-card{
+    background: rgba(15,15,15,0.9);
+    width:220px;
+    padding:15px;
+    text-align:center;
+    border-left:4px solid crimson;
+    border-radius:10px;
+    box-shadow:0 0 20px rgba(0,0,0,0.8);
+    transition:0.3s;
+}
+
+/* HOVER TARJETA */
+.pdf-card:hover{
+    transform:translateY(-8px) scale(1.03);
+    box-shadow:0 0 30px rgba(220,20,60,0.6);
+}
+
+/* ===== IMÁGENES ===== */
+.pdf-card img{
+    width:100%;
+    height:280px;
+    object-fit:cover;
+    border-radius:8px;
+}
+
+/* ===== TEXTO ===== */
+.titulo a{
+    display:block;
+    margin-top:12px;
+    color:crimson;
+    text-decoration:none;
+    font-weight:bold;
+    letter-spacing:2px;
+}
+
+.titulo a:hover{
+    color:white;
+    text-shadow:0 0 10px crimson;
+}
+
+/* ===== FOOTER ===== */
+footer{
+    text-align:center;
+    padding:20px;
+    color:gray;
+    background: rgba(0,0,0,0.8);
+}
