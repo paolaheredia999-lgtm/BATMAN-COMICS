@@ -18,23 +18,28 @@ nav a {
     text-decoration: none;
 }
 
-/* HEADER */
-header {
-    text-align: center;
-    padding: 100px 20px;
+/* 🔥 HEADER FLEX */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 40px;
 }
 
-header h1 {
+/* TEXTO */
+.hero-text {
+    flex: 1;
+    text-align: center;
+}
+
+.hero-text h1 {
     font-size: 4rem;
     color: #2aff2a;
     letter-spacing: 5px;
 }
 
-/*IMAGEN ARRIBA DERECHA */
+/* 🔥 IMAGEN DERECHA (YA SIN ABSOLUTE) */
 .acertijo-top {
-    position: absolute;
-    top: 120px;
-    right: 40px;
     width: 260px;
 }
 
@@ -44,7 +49,7 @@ header h1 {
     box-shadow: 0 0 20px rgba(42,255,42,0.5);
 }
 
-/*LAYOUT CON IMAGEN */
+/* 🔥 LAYOUT */
 .acertijo-layout {
     display: flex;
     align-items: center;
@@ -106,13 +111,17 @@ footer {
 
 /* RESPONSIVE */
 @media(max-width:768px){
+    .hero{
+        flex-direction: column;
+        text-align: center;
+    }
+
     .acertijo-layout{
         flex-direction: column;
         text-align: center;
     }
 
     .acertijo-top{
-        position: static;
-        margin: 20px auto;
+        margin-top: 20px;
     }
 }
