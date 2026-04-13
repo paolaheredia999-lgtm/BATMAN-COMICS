@@ -18,29 +18,24 @@ nav a {
     text-decoration: none;
 }
 
-/* 🔥 HEADER */
-.hero {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 100px 40px;
-}
-
-/* TEXTO */
-.hero-text {
-    flex: 1;
+/* HEADER (IGUAL QUE BATMAN) */
+header {
     text-align: center;
+    padding: 100px 20px 60px;
 }
 
-.hero-text h1 {
+header h1 {
     font-size: 4rem;
+    letter-spacing: 6px;
     color: #2aff2a;
-    letter-spacing: 5px;
 }
 
-/* IMAGEN DERECHA */
+/* IMAGEN SUPERIOR DERECHA */
 .acertijo-top {
-    width: 260px;
+    position: absolute;
+    top: 120px;
+    right: 40px;
+    max-width: 260px;
 }
 
 .acertijo-top img {
@@ -49,20 +44,20 @@ nav a {
     box-shadow: 0 0 20px rgba(42,255,42,0.5);
 }
 
-/* 🔥 LAYOUT */
+/* LAYOUT PRINCIPAL */
 .acertijo-layout {
     display: flex;
-    align-items: center;
     gap: 40px;
-    max-width: 900px;
+    max-width: 1000px;
     margin: auto;
     padding: 40px;
+    align-items: center;
 }
 
-/* IMAGEN IZQUIERDA */
+/* IMAGEN */
 .acertijo-img img {
     width: 100%;
-    max-width: 350px;
+    max-width: 400px;
     border: 2px solid #2aff2a;
     box-shadow: 0 0 20px rgba(42,255,42,0.5);
 }
@@ -72,17 +67,17 @@ nav a {
     flex: 1;
 }
 
-/* SECCIONES */
-section {
-    max-width: 900px;
-    margin: auto;
+.acertijo-info li {
+    margin: 12px 0;
 }
 
 /* PUZZLE */
 .puzzle {
+    max-width: 900px;
+    margin: auto;
     background: #020702;
-    padding: 30px;
-    border: 1px solid #2aff2a;
+    padding: 20px;
+    border-left: 4px solid #2aff2a;
     text-align: center;
 }
 
@@ -109,57 +104,31 @@ footer {
     color: #ff4d4d;
 }
 
-/* 📱🔥 RESPONSIVE MODO PRO */
+/* 📱 RESPONSIVE (CLAVE) */
 @media(max-width:768px){
 
-    /* HEADER */
-    .hero{
-        flex-direction: column;
-        text-align: center;
-        padding: 60px 20px;
-    }
-
-    /* TÍTULO */
-    .hero-text h1{
-        font-size: 2.5rem;
-    }
-
-    /* IMAGEN SUPERIOR */
+    /* IMAGEN ARRIBA */
     .acertijo-top{
-        width: 180px;
+        position: static;
         margin: 20px auto;
+        display: block;
     }
 
     /* LAYOUT */
     .acertijo-layout{
         flex-direction: column;
-        gap: 20px;
-        padding: 20px;
-    }
-
-    /* IMAGEN */
-    .acertijo-img img{
-        max-width: 250px;
-        margin: auto;
-        display: block;
-    }
-
-    /* TEXTO */
-    .acertijo-info{
+        align-items: center;
         text-align: center;
     }
 
-    .acertijo-info ul{
-        padding: 0;
-        list-style: none;
+    .acertijo-img img{
+        max-width: 250px;
     }
 
-    /* INPUT */
     .puzzle input{
         width: 95%;
     }
 
-    /* BOTÓN */
     .puzzle button{
         width: 100%;
     }
