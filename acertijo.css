@@ -30,7 +30,7 @@ header h1 {
     letter-spacing: 5px;
 }
 
-/* 🔥 IMAGEN ARRIBA DERECHA */
+/*IMAGEN ARRIBA DERECHA */
 .acertijo-top {
     position: absolute;
     top: 120px;
@@ -44,7 +44,7 @@ header h1 {
     box-shadow: 0 0 20px rgba(42,255,42,0.5);
 }
 
-/* 🔥 LAYOUT CON IMAGEN */
+/*LAYOUT CON IMAGEN */
 .acertijo-layout {
     display: flex;
     align-items: center;
