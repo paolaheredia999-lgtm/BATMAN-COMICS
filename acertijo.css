@@ -18,7 +18,7 @@ nav a {
     text-decoration: none;
 }
 
-/* 🔥 HEADER FLEX */
+/* 🔥 HEADER */
 .hero {
     display: flex;
     justify-content: space-between;
@@ -38,7 +38,7 @@ nav a {
     letter-spacing: 5px;
 }
 
-/* 🔥 IMAGEN DERECHA (YA SIN ABSOLUTE) */
+/* IMAGEN DERECHA */
 .acertijo-top {
     width: 260px;
 }
@@ -109,19 +109,58 @@ footer {
     color: #ff4d4d;
 }
 
-/* RESPONSIVE */
+/* 📱🔥 RESPONSIVE MODO PRO */
 @media(max-width:768px){
+
+    /* HEADER */
     .hero{
         flex-direction: column;
         text-align: center;
+        padding: 60px 20px;
     }
 
+    /* TÍTULO */
+    .hero-text h1{
+        font-size: 2.5rem;
+    }
+
+    /* IMAGEN SUPERIOR */
+    .acertijo-top{
+        width: 180px;
+        margin: 20px auto;
+    }
+
+    /* LAYOUT */
     .acertijo-layout{
         flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    /* IMAGEN */
+    .acertijo-img img{
+        max-width: 250px;
+        margin: auto;
+        display: block;
+    }
+
+    /* TEXTO */
+    .acertijo-info{
         text-align: center;
     }
 
-    .acertijo-top{
-        margin-top: 20px;
+    .acertijo-info ul{
+        padding: 0;
+        list-style: none;
+    }
+
+    /* INPUT */
+    .puzzle input{
+        width: 95%;
+    }
+
+    /* BOTÓN */
+    .puzzle button{
+        width: 100%;
     }
 }
